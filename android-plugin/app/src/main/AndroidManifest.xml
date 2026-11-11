@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:hasCode="true"
+        android:label="${appLabel}"
+        android:theme="@style/Theme.KryptonPlugin">
+
+        <activity
+            android:name=".InfoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.KryptonPlugin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PluginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.KryptonPlugin.NoDisplay" />
+
+        <meta-data
+            android:name="fclPlugin_V2"
+            android:resource="@string/config" />
+
+        <meta-data
+            android:name="opt_disable_title"
+            android:resource="@string/opt_disable_title" />
+        <meta-data
+            android:name="opt_keep_finish_title"
+            android:resource="@string/opt_keep_finish_title" />
+        <meta-data
+            android:name="opt_keep_geterror_title"
+            android:resource="@string/opt_keep_geterror_title" />
+
+        <meta-data
+            android:name="fclPlugin"
+            android:value="true" />
+        <meta-data
+            android:name="des"
+            android:value="${des}" />
+        <meta-data
+            android:name="renderer"
+            android:value="${renderer}" />
+        <meta-data
+            android:name="boatEnv"
+            android:value="${boatEnv}" />
+        <meta-data
+            android:name="pojavEnv"
+            android:value="${pojavEnv}" />
+    </application>
+
+</manifest>

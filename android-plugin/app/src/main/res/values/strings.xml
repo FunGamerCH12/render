@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Krypton Wrapper</string>
+    <string name="opt_disable_title">Matikan optimizer PowerVR</string>
+    <string name="opt_keep_finish_title">Pakai glFinish asli (jangan diganti glFlush)</string>
+    <string name="opt_keep_geterror_title">Aktifkan glGetError asli</string>
+</resources>
