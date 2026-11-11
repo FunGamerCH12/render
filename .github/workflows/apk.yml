@@ -32,9 +32,12 @@ jobs:
         with:
           gradle-version: 8.10.2
 
+      # Runner ini tidak punya sdkmanager di PATH, jadi dipasang lewat action resmi.
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
       - name: Install NDK, CMake, SDK
         run: |
-          yes | sdkmanager --licenses >/dev/null || true
           sdkmanager "ndk;27.3.13750724" "cmake;3.22.1" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Siapkan keystore
